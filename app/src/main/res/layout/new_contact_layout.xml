@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_contact_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#A74DAD"
+    tools:context="com.tunex.myprivatecontact.NewContactActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New User Information"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:id="@+id/new_user_id" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Contact Name"
+        android:ems="10"
+        android:layout_below="@+id/new_user_id"
+        android:layout_marginTop="43dp"
+        android:id="@+id/contact_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Mobile No"
+        android:ems="10"
+        android:layout_below="@+id/contact_name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/contact_mobile"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Email Address"
+        android:ems="10"
+        android:layout_below="@+id/contact_mobile"
+        android:layout_marginTop="20dp"
+        android:id="@+id/contact_email"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:background="#CF7F35"
+        android:layout_below="@+id/contact_email"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/saveContact"
+        android:onClick="addContact"/>
+
+
+</RelativeLayout>
